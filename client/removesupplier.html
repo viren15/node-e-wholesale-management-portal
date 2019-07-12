@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Remove</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="option.html"><img src="home.png" width="5%" height="100%"> <span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Logout</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="form-group">
+			<form method="POST" action="/remsup" name="form">
+				<label for="SupplierID">Supplier-ID:</label>
+				<input type="text" class="form-control" name="sup_id" maxlength="10" id="SupplierID" maxlength="10" size="10"
+				 Placeholder="SupplierID" required />
+
+				<input type="submit" name="S_send" class="btn btn-primary" value="Remove">
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

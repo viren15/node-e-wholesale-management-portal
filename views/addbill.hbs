@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Supplier</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="option.html"><img src="home.png" width="5%" height="100%">
+                        <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <fieldset class="border p-3">
+            <legend class="w-auto"><strong>Place Order</strong></legend>
+            <form method="POST" action="/addbill">
+                <div class="form-group">
+                    <label for="bill-Id">Bill-ID:</label>
+                    <input type="text" class="form-control" maxlength="5" size="5" name="bill_id" id="SupplierID" Placeholder="bill ID"
+                        required />
+
+                    <label for="product-Id">Product-ID:</label>
+                    <input type="text" class="form-control" maxlength="5" size="5" name="product_id" id="SupplierID"
+                        Placeholder="Product ID" required />
+
+                    <label for="cust_id">Cust-ID:</label>
+                    <input type="text" class="form-control" name="cust_id" maxlength="10" size="10" id="customer_id"
+                        Placeholder="Customer ID" required />
+
+                    <label for="date">Date:</label>
+                    <input type="date" name="bill_date" class="form-control" id="date" required>
+
+                    <!-- <label for="price">Price:</label>
+                                <input type="number" name="price_per_product" class="form-control" id="price" required> -->
+
+                    <label for="Quantity">Quantity:</label>
+                    <input type="number" name="pro_quantity" class="form-control" id="pro_quantity" required>
+                    <hr />
+                    <input type="submit" name="S_send" class="btn btn-primary" value="ADD">
+
+
+                </div>
+            </form>
+        </fieldset>
+    </div>
+    <hr />
+    <h2 style="text-align: center">{{text}}</h2>
+</body>
+
+</html>

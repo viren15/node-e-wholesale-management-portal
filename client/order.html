@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script type="text/javascript" src="cart.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="option.html"><img src="home.png" width="5%" height="100%"> <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <fieldset class="border p-3">
+            <legend class="w-auto"><strong>NEW ORDER</strong></legend>
+            <form>
+                <div class="form-group">
+
+                    <label for="CustomerID">Customer-ID:</label>
+                    <input type="text" name="CustomerID" class="form-control" id="CustomerID" Placeholder="CustomerID"
+                        required>
+
+                    <table class="table">
+                        <tr>
+                            <td>
+                                <label for="productID">Product ID:</label>
+                            </td>
+                            <td>
+                                <input id="productID" scope="col" class="form-control" name="product" type="text" size="28"
+                                    required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="product">Product Desc:</label>
+                            </td>
+                            <td>
+                                <input id="product_desc" scope="col" class="form-control" name="product" type="text"
+                                    size="28" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="quantity">Quantity:</label>
+                            </td>
+                            <td>
+                                <input id="quantity" scope="col" class="form-control" name="quantity" width="196px"
+                                    required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="price">Price:</label>
+                            </td>
+                            <td>
+                                <input id="price" scope="col" class="form-control" name="price" size="28" required />
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="reset" name="reset" id="resetbtn" class="resetbtn" class="form-control" value="Reset" />
+                    <input type="button" id="btnAddProduct" onclick="addProduct();" value="Add New Product">
+                </div>
+            </form>
+            <br>
+        </fieldset>
+        <p id="demo"></p> <br />
+        <h2> Shopping Cart </h2>
+        <p id="demo2"></p>
+        <h2>Grand Total:</h2>
+        <p id="demo3"></p>
+    </div>
+</body>
+
+</html>

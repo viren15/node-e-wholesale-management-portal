@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Product</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="option.html"><img src="home.png" width="5%" height="100%"> <span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Logout</a>
+				</li>
+			</ul>
+
+		</div>
+	</nav>
+	<div class="container">
+		<fieldset class="border p-3">
+			<legend class="w-auto"><strong>Product Details</strong></legend>
+			<form method="POST" action="/addprod" name="form">
+				<div class="form-group">
+					<label for="ProductID">Product-ID:</label>
+					<input type="text" class="form-control" name="product_id" maxlength="5" size="5" id="ProductID" Placeholder="Product ID"
+					 required />
+
+					<label for="name">Type:</label>
+					<input type="text" name="product_type" class="form-control" maxlength="15" size="5" id="name" Placeholder="Product Name"
+					 required>
+
+					<label for="price">Price:</label>
+					<input type="number" name="product_price" class="form-control" id="price" Placeholder="₹" required>
+
+					<label for="descr">Description:</label>
+					<input type="text" name="product_desc" class="form-control" maxlength="100" size="100" id="descr" required>
+
+					<label for="quantity">Brand:</label>
+					<input type="text" name="brand" id="quantity" maxlength="10" size="10" class="form-control" required>
+
+					<input type="submit" name="P_send" class="btn btn-primary" value="ADD">
+				</div>
+			</form>
+		</fieldset>
+	</div>
+
+</body>
+
+</html>

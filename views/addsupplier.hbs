@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Supplier</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="option.html"><img src="home.png" width="5%" height="100%"> <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <fieldset class="border p-3">
+            <legend class="w-auto"><strong>Supplier Details</strong></legend>
+            <form method="POST" action="/addsup" name="form">
+                <div class="form-group">
+                    <label for="SupplierID">Supplier-ID:</label>
+                    <input type="text" class="form-control" name="sup_id" id="SupplierID" maxlength="10" size="10"
+                        Placeholder="SupplierID" required />
+
+                    <label for="name">Name:</label>
+                    <input type="text" name="sup_name" class="form-control" id="name" maxlength="20" size="20"
+                        Placeholder="Supplier Name" required>
+
+                    <label for="Email">Email-Id:</label>
+                    <input type="email" name="sup_email" class="form-control" id="Email" maxlength="40" size="40"
+                        Placeholder="xyz@abc.com" required>
+
+                    <input type="submit" name="S_send" class="btn btn-primary" value="ADD">
+                </div>
+            </form>
+        </fieldset>
+    </div>
+    <hr />
+    <h2 style="text-align: center">{{text}}</h2>
+</body>
+
+</html>

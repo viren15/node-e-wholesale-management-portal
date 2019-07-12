@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <style>
+        .thumbnail{
+			width:280px; 
+    		height:185px;
+    		object-fit: cover;
+		}
+	</style>
+
+
+</head>
+
+<body>
+    <h1 style="color:red">{{text}}</h1>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">
+            <img src="download (2).png" width="30" height="30" alt="">
+        </a>
+        <form class="form-inline  ml-auto" method="POST" action="/login">
+            <div class="form-group float-right">
+                <label class="mr-sm-2" for="exampleInputuserId">Username</label>
+                <input type="name" class="form-control mr-sm-2" id="exampleInputusername" placeholder="Enter username"
+                    name="username" required>
+            </div>
+            <div class="form-group">
+                <label class="mr-sm-2" for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control mr-sm-2" id="exampleInputPassword1" placeholder="Password"
+                    name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            &nbsp;
+            <button type="submit" class="btn btn-primary">
+                <a class="button" href="addnewuser.html" style="color:white">sign up</a>
+            </button>
+        </form>
+
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="section-title-wrap">
+                <h4 style="text-align: center">Wholesale Management System</h4>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-sm">
+                    <div class="thumbnail"><img src="photo1.jpg" style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="col-sm">
+                    <div class="thumbnail"><img src="photo2.jpg" style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="col-sm">
+                    <div class="thumbnail"><img src="photo3.jpg" style="width: 100%; height: 100%;"></div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-sm">
+                    <div class="thumbnail"><img src="photo4.jpg" style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="col-sm">
+                    <div class="thumbnail"><img src="photo5.jpg" style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="col-sm">
+                    <div class="thumbnail"><img src="photo6.jpg" style="width: 100%; height: 100%;"></div>
+                </div>
+            </div>
+            <hr />
+            <div>
+                <h6>Mobile Phones</h6>
+                <p>From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there.
+                    Whether you're
+                    looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification
+                    apps,
+                    high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop
+                    from top brands in
+                    the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few.</p>
+                <h6>Electronic Devices and Accessories</h6>
+                <p>When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating
+                    systems, hard disk
+                    capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash.
+                    All you
+                    students out there, confused about what laptop to get? Our Back To College Store segregates laptops
+                    purpose wise
+                    (gaming, browsing and research, project work, entertainment, design, multitasking) with
+                    recommendations from top
+                    brands and industry experts, facilitating a shopping experience that is quicker and simpler.
+                </p>
+                <h6>Large Appliances</h6>
+                <p>Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover
+                    everything you
+                    need to run a house under one roof. Our Dependable TV and Appliance Store ensures zero transit
+                    damage, with a
+                    replacement guarantee if anything goes wrong; delivery and installation as per your convenience and
+                    a double
+                    warranty (Official Brand Warranty along with an extended Flipkart Warranty) - rest assured, value
+                    for money is
+                    what is promised and delivered. Shop from market leaders in the country like Samsung, LG,
+                    Whirlpool, Midea, Mi,
+                    Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others. </p>
+                <h6>Lifestyle</h6>
+                <p>Flipkart, 'India ka Fashion Capital', is your one-stop fashion destination for anything and
+                    everything you need
+                    to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing, formal
+                    and casual
+                    footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories are
+                    sure to sweep
+                    you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland,
+                    Nike, Puma,
+                    Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names.</p>
+                <h6>Books, Sports and Games</h6>
+                <p>Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction
+                    books by
+                    your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming consoles, and
+                    a tempting
+                    range of fitness and sports gadgets and equipment bound to inspire you to get moving. </p>
+                <h6>Grocery</h6>
+                <p>Launching into the grocery vertical, Flipkart introduces Supermart that is out to bring everyday
+                    essentials
+                    close to you. From pulses, spices, dairy, personal and sanitary care, breakfast essentials, health
+                    drinks,
+                    spreads, ready to cook, grooming to cleaning agents, we are happy to present everything you need to
+                    run a house.
+                    Now buy Grocery products for as low as 1 Rupee only - our 1 Rupee Store presents new products every
+                    day for a
+                    nominal price of 1 Rupee only. Terms and conditions apply.</p>
+            </div>
+            <footer style="text-align: center;"><b>© 1996-2019, Wholesale.com, Inc. or its affiliates</b></footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stock</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="option.html"><img src="home.png" width="5%" height="100%"> <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Logout</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container">
+        <fieldset class="border p-3">
+            <legend class="w-auto"><strong>Stock Details</strong></legend>
+            <form method="POST" action="/addstock">
+                <div class="form-group">
+                    <!-- <label for="StockID">Stock-ID:</label>
+    					<input type="text" class="form-control" name="stock_id" id="StockID" Placeholder="stock id" required /> -->
+
+                    <label for="ProductID">Product-ID:</label>
+                    <input type="text" name="product_id" maxlength="5" size="5" class="form-control" id="name"
+                        Placeholder="product id" required>
+
+                    <label for="supplierID">Supplier-ID:</label>
+                    <input type="text" name="sup_id" class="form-control" maxlength="10" size="10" id="name"
+                        Placeholder="supplier Id" required>
+
+                    <!-- <label for="P_price">Stock Value:</label>
+    					<input type="number" name="stock_value" class="form-control" id="P_price" Placeholder="₹" required> -->
+
+                    <label for="P_quantity">Quantity:</label>
+                    <input type="number" name="total_quantity" id="P_quantity" class="form-control" required>
+
+                    <label for="descr">Description:</label>
+                    <input type="text" name="stock_desc" class="form-control" maxlength="100" max="100" id="descr"
+                        required>
+                    <hr />
+                    <input type="submit" name="P_send" class="btn btn-primary" value="ADD">
+                </div>
+            </form>
+        </fieldset>
+    </div>
+    <hr />
+    <h2 style="text-align: center">{{text}}</h2>
+</body>
+
+</html>
